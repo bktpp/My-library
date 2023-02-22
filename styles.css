@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, .read-not-read, .sub-cont {
+  font-family: 'Caveat', cursive;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.title {
+    padding: 10px 35px;
+    box-shadow: 2px 2px 5px 0px rgba(148, 148, 148, 0.75);
+}
+
+.form-main-cont {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+
+.add-book-cont {
+    display: none;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 1;
+    padding-top: 20px;
+}
+
+.book-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-shrink: 1;
+    
+    border-radius: 8px;
+}
+
+input {
+    display: inline-block;
+    height: 35px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f2f1f1;
+    border: none;
+}
+
+.add-btn-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 25px;
+}
+  .add-btn {
+    margin-bottom: 10px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .add-btn, p {
+    margin-bottom: 10px;
+  }
+
+  .read-cont {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sub-cont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  input[type="text"]:focus, input[type="number"]:focus {
+    border: 2px rgb(90, 255, 90) solid;
+    outline: none;
+  }
+
+  .material-icons-outlined.md-36 { 
+    font-size: 36px; 
+    color: rgb(41, 96, 137);
+    cursor: pointer;
+}
+
+.books-cont {
+  display: grid;
+  height: 350px;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  padding: 35px;
+  gap: 35px;
+}
+
+.books-cont > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: bisque;
+  border: 1px hsl(39, 100%, 41%) solid;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px 1px rgba(148, 148, 148, 0.75);
+}
+
+@media (max-width: 500px) {
+  .books-cont {
+    grid-template-columns: 1fr;
+  }
+}
+
+.read-not-read {
+  border-radius: 20px;
+  width: 60%;
+  padding: 10px;
+  border: 3px hsl(39, 100%, 41%) groove;
+  color: rgb(251, 230, 204);  
+}
+
+
+   
+  
+
+
+  
+  
+  

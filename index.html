@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Nunito+Sans:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1 class = "title">My Library</h1>
+    <div class="add-btn-cont">
+    <button class="add-btn"><span class="material-icons-outlined md-36">
+        add_box
+        </span></button>
+        <p class="btn-caption">Click to add a book to the library</p>
+    </div>
+        
+    <div class="form-main-cont">
+          <div class="book-card"> 
+            <form class="add-book-cont" id="book-form">
+                <label for="title">
+                    <input class="user-info" type="text" id="title" name="title" placeholder="Title" required>
+                </label>
+                <label for="author">
+                    <input class="user-info" type="text" id="author" name="author" placeholder="Author" required>
+                </label> 
+                <label for="pages">
+                    <input class="user-info" type="number" id="pages" name="pages" placeholder="Pages" required>
+                </label>
+                <div class="read-cont">
+                    <label for="is-read"> Read it? </label>
+                        <input class="user-info" id="is-read" type="checkbox" name="is-read">
+                </div>
+                <div class="sub-cont">
+                <label for="submit-btn">
+                    <input type="submit" id="submit-btn" name="submit-btn" value="Submit">
+                </label>
+                </div>
+            </form>
+        </div> 
+    </div>
+
+    <div class="books-cont">
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
