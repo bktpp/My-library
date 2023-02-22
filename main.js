@@ -55,11 +55,19 @@ function bookCards(arg) {
         <p>Author: ${addedBooks.author}</p>
         <p>Pages: ${addedBooks.pages}</p>`;
 
+        const readStatus = document.createElement('p');
+        readStatus.textContent = 'Click to change read status';
+        readStatus.style.fontStyle = 'italic';
+        readStatus.style.fontSize = '12px';
+        
         const readOrNot = document.createElement('button');
         readOrNot.classList.add('read-not-read');
         readOrNot.textContent = `${addedBooks.isRead ? 'Read' : 'Not Read'}`;
         readOrNot.style.backgroundColor = `${addedBooks.isRead ? 'green' : 'red'}`;
+        
         bookLibrary.appendChild(readOrNot);
+        bookLibrary.appendChild(readStatus);
+        
 
         readOrNot.addEventListener('click', function() {
             if(addedBooks.isRead === true) {
